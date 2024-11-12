@@ -1,0 +1,151 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 25 09:17:24 2024
+# Process ID: 4560
+# Current directory: D:/220110630/proj_single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3144 D:\220110630\proj_single_cycle\proj_single_cycle.xpr
+# Log file: D:/220110630/proj_single_cycle/vivado.log
+# Journal file: D:/220110630/proj_single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/220110630/proj_single_cycle/proj_single_cycle.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DIGIT_DINSEL.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 09:18:42 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.dcp' for cell 'Mem_DRAM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.dcp' for cell 'Mem_IROM'
+INFO: [Netlist 29-17] Analyzing 3003 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2082.980 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2060 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2082.980 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jul 25 09:24:03 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 09:24:03 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 09:27:32 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 09:27:32 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+export_ip_user_files -of_objects  [get_files D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF_WDSEL.v] -no_script -reset -force -quiet
+remove_files  D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF_WDSEL.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 10:48:46 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 10:48:46 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 10:53:19 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 10:53:19 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 10:59:26 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 10:59:26 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property -dict [list CONFIG.coefficient_file {D:/220110630/proj_single_cycle/hex.coe}] [get_ips IROM]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/220110630/proj_single_cycle/hex.coe' provided. It will be converted relative to IP Instance files '../../../../hex.coe'
+generate_target all [get_files  D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'IROM'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'IROM'...
+catch { config_ip_cache -export [get_ips -all IROM] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP IROM, cache-ID = a99d3109163aa6f4; cache size = 48.055 MB.
+export_ip_user_files -of_objects [get_files D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci'
+export_simulation -of_objects [get_files D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci] -directory D:/220110630/proj_single_cycle/proj_single_cycle.ip_user_files/sim_scripts -ip_user_files_dir D:/220110630/proj_single_cycle/proj_single_cycle.ip_user_files -ipstatic_source_dir D:/220110630/proj_single_cycle/proj_single_cycle.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/220110630/proj_single_cycle/proj_single_cycle.cache/compile_simlib/modelsim} {questa=D:/220110630/proj_single_cycle/proj_single_cycle.cache/compile_simlib/questa} {riviera=D:/220110630/proj_single_cycle/proj_single_cycle.cache/compile_simlib/riviera} {activehdl=D:/220110630/proj_single_cycle/proj_single_cycle.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 13:43:45 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 13:43:45 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 25 15:44:14 2024...

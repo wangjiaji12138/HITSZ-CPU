@@ -1,0 +1,233 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Tue Jul 30 13:34:02 2024
+| Host         : PA37 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file miniRV_SoC_methodology_drc_routed.rpt -pb miniRV_SoC_methodology_drc_routed.pb -rpx miniRV_SoC_methodology_drc_routed.rpx
+| Design       : miniRV_SoC
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 38
++-----------+----------+--------------------------------------------------------+------------+
+| Rule      | Severity | Description                                            | Violations |
++-----------+----------+--------------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                           | 2          |
+| TIMING-14 | Warning  | LUT on the clock tree                                  | 1          |
+| TIMING-20 | Warning  | Non-clocked latch                                      | 33         |
+| XDCC-1    | Warning  | Scoped Clock constraint overwritten with the same name | 1          |
+| XDCC-7    | Warning  | Scoped Clock constraint overwritten on the same source | 1          |
++-----------+----------+--------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/U_ALU/dou_reg[15]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/U_DIGIT/dou_reg[10]/PRE, Core_cpu/U_DIGIT/dou_reg[11]/PRE, Core_cpu/U_DIGIT/dou_reg[12]/PRE, Core_cpu/U_DIGIT/dou_reg[13]/PRE, Core_cpu/U_DIGIT/dou_reg[14]/PRE, Core_cpu/U_DIGIT/dou_reg[15]/PRE, Core_cpu/U_DIGIT/dou_reg[8]/PRE, Core_cpu/U_DIGIT/dou_reg[9]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+LUTAR-1#2 Warning
+LUT drives async reset alert  
+LUT cell Core_cpu/U_ALU/dou_reg[31]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) Core_cpu/U_DIGIT/dou_reg[16]/PRE, Core_cpu/U_DIGIT/dou_reg[17]/PRE, Core_cpu/U_DIGIT/dou_reg[18]/PRE, Core_cpu/U_DIGIT/dou_reg[19]/PRE, Core_cpu/U_DIGIT/dou_reg[20]/PRE, Core_cpu/U_DIGIT/dou_reg[21]/PRE, Core_cpu/U_DIGIT/dou_reg[22]/PRE, Core_cpu/U_DIGIT/dou_reg[23]/PRE, Core_cpu/U_DIGIT/dou_reg[24]/PRE, Core_cpu/U_DIGIT/dou_reg[25]/PRE, Core_cpu/U_DIGIT/dou_reg[26]/PRE, Core_cpu/U_DIGIT/dou_reg[27]/PRE, Core_cpu/U_DIGIT/dou_reg[28]/PRE, Core_cpu/U_DIGIT/dou_reg[29]/PRE, Core_cpu/U_DIGIT/dou_reg[30]/PRE (the first 15 of 16 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT cpu_clk_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[0] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[10] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[11] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[11]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[12] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[12]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[13] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[13]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[14] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[14]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[15] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[15]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[16] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[16]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[17] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[17]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[18] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[18]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[19] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[19]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[1] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[20] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[20]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[21] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[21]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[22] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[22]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[23] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[23]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[24] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[24]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[25] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[25]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[26] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[26]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[27] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[27]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[28] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[28]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[29] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[29]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[2] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[30] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[30]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[31] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[31]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[3] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[4] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[5] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[6] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[7] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[8] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_C_reg[9] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_C_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch Core_cpu/U_ALU/output_f_reg[0] cannot be properly analyzed as its control pin Core_cpu/U_ALU/output_f_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name fpga_clk [get_ports fpga_clk] (Source: D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc (Line: 2))
+Previous: create_clock -period 10.000 [get_ports fpga_clk] (Source: d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 10.000 -name fpga_clk [get_ports fpga_clk] (Source: D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc (Line: 2))
+Previous: create_clock -period 10.000 [get_ports fpga_clk] (Source: d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc (Line: 56))
+Related violations: <none>
+
+

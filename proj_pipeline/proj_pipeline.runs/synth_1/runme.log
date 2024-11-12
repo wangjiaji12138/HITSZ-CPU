@@ -1,0 +1,783 @@
+
+*** Running vivado
+    with args -log miniRV_SoC.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source miniRV_SoC.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source miniRV_SoC.tcl -notrace
+Command: synth_design -top miniRV_SoC -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6104 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 468.590 ; gain = 101.238
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'miniRV_SoC' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/miniRV_SoC.v:4]
+INFO: [Synth 8-6157] synthesizing module 'cpuclk' [D:/220110630/proj_pipeline/proj_pipeline.runs/synth_1/.Xil/Vivado-5340-PA37/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (1#1) [D:/220110630/proj_pipeline/proj_pipeline.runs/synth_1/.Xil/Vivado-5340-PA37/realtime/cpuclk_stub.v:5]
+WARNING: [Synth 8-350] instance 'Clkgen' of module 'cpuclk' requires 4 connections, but only 3 given [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/miniRV_SoC.v:93]
+INFO: [Synth 8-6157] synthesizing module 'myCPU' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/myCPU.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/PC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/PC.v:24]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-226] default block is never used [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/NPC.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (3#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/RF.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (4#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/RF.v:24]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/SEXT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (5#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/SEXT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Ctrl' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Ctrl.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Ctrl' (7#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Ctrl.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DIGIT' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/DIGIT.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'DIGIT' (8#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/DIGIT.v:24]
+INFO: [Synth 8-6157] synthesizing module 'IF_REG' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/IF_REG.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'IF_REG' (9#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/IF_REG.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ID_REG' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/ID_REG.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ID_REG' (10#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/ID_REG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EX_REG' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/EX_REG.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'EX_REG' (11#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/EX_REG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MEM_REG' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/MEM_REG.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_REG' (12#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/MEM_REG.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Data_Hazard_Detection' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Data_Hazard_Detection.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Hazard_Detection' (13#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Data_Hazard_Detection.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Control_Hazard_Detection' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Control_Hazard_Detection.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Hazard_Detection' (14#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Control_Hazard_Detection.v:24]
+WARNING: [Synth 8-350] instance 'U_Control_Hazard_Detection' of module 'Control_Hazard_Detection' requires 6 connections, but only 4 given [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/myCPU.v:345]
+INFO: [Synth 8-6155] done synthesizing module 'myCPU' (15#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/myCPU.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Bridge' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Bridge.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'Bridge' (16#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Bridge.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [D:/220110630/proj_pipeline/proj_pipeline.runs/synth_1/.Xil/Vivado-5340-PA37/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (17#1) [D:/220110630/proj_pipeline/proj_pipeline.runs/synth_1/.Xil/Vivado-5340-PA37/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [D:/220110630/proj_pipeline/proj_pipeline.runs/synth_1/.Xil/Vivado-5340-PA37/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (18#1) [D:/220110630/proj_pipeline/proj_pipeline.runs/synth_1/.Xil/Vivado-5340-PA37/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DLED_Interface' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/DLED_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Dig' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Dig.v:23]
+INFO: [Synth 8-226] default block is never used [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Dig.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'Dig' (19#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Dig.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DLED_Interface' (20#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/DLED_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_Interface' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/LED_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Interface' (21#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/LED_Interface.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'wdata' does not match port width (24) of module 'LED_Interface' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/miniRV_SoC.v:203]
+WARNING: [Synth 8-689] width (24) of port connection 'led' does not match port width (32) of module 'LED_Interface' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/miniRV_SoC.v:204]
+INFO: [Synth 8-6157] synthesizing module 'Button_Interface' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Button_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Button_Interface' (22#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Button_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Switches_Interface' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Switches_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Switches_Interface' (23#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/Switches_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV_SoC' (24#1) [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/miniRV_SoC.v:4]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port clk
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[31]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[30]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[29]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[28]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[27]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[26]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[25]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[24]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[23]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[22]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[21]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[20]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[19]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[18]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[17]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[16]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[15]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[14]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[13]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[12]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[11]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[10]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[9]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[8]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[7]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[6]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[5]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[4]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[3]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[2]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[1]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[0]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[31]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[30]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[29]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[28]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[27]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[26]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[25]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[24]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[23]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[22]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[21]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[20]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[19]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[18]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[17]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[16]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[15]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[14]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[13]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[12]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[11]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[10]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[9]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[8]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[7]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[6]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[5]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[4]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[3]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[2]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[1]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[0]
+WARNING: [Synth 8-3331] design Dig has unconnected port rst
+WARNING: [Synth 8-3331] design Dig has unconnected port clk
+WARNING: [Synth 8-3331] design Data_Hazard_Detection has unconnected port ex_dram_we[0]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[31]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[30]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[29]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[28]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[27]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[26]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[25]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[24]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[23]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[22]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[21]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[20]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[19]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[18]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[17]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[16]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[15]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[14]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[13]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[12]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[11]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[10]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[9]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[8]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[7]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[6]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[5]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[4]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[3]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port alu[2]
+WARNING: [Synth 8-3331] design Ctrl has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design Ctrl has unconnected port funct7[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 530.219 ; gain = 162.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U_Control_Hazard_Detection:clk to constant 0 [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/myCPU.v:345]
+WARNING: [Synth 8-3295] tying undriven pin U_Control_Hazard_Detection:rst to constant 0 [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/myCPU.v:345]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 530.219 ; gain = 162.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 530.219 ; gain = 162.867
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'Clkgen'
+Finished Parsing XDC File [d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'Clkgen'
+Parsing XDC File [d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'Mem_IROM'
+Finished Parsing XDC File [d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/IROM/IROM/IROM_in_context.xdc] for cell 'Mem_IROM'
+Parsing XDC File [d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'Mem_DRAM'
+Finished Parsing XDC File [d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/DRAM/DRAM/DRAM_in_context.xdc] for cell 'Mem_DRAM'
+Parsing XDC File [D:/220110630/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_clock.xdc]
+WARNING: [Constraints 18-619] A clock with name 'fpga_clk' already exists, overwriting the previous clock with the same name. [D:/220110630/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_clock.xdc:2]
+Finished Parsing XDC File [D:/220110630/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_clock.xdc]
+Parsing XDC File [D:/220110630/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_SoC.xdc]
+Finished Parsing XDC File [D:/220110630/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_SoC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/220110630/proj_pipeline/proj_pipeline.srcs/constrs_1/new/miniRV_SoC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/miniRV_SoC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/miniRV_SoC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 899.434 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 899.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 899.434 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 899.434 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 899.434 ; gain = 532.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 899.434 ; gain = 532.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for fpga_clk. (constraint file  d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for fpga_clk. (constraint file  d:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for Clkgen. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mem_IROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for Mem_DRAM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 899.434 ; gain = 532.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "j_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_asel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "j_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_asel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rf_wsel1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branch6" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "branchs_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "jump" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "access_sw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "access_btn" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "access_dig" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "access_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'output_C_reg' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/ALU.v:33]
+WARNING: [Synth 8-327] inferring latch for variable 'output_f_reg' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/ALU.v:34]
+WARNING: [Synth 8-327] inferring latch for variable 'dou_reg' [D:/220110630/proj_pipeline/proj_pipeline.srcs/sources_1/new/DIGIT.v:42]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 899.434 ; gain = 532.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 52    
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 41    
+	  10 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	   6 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 19    
+	   2 Input      2 Bit        Muxes := 12    
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 55    
+	   3 Input      1 Bit        Muxes := 32    
+	  13 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+	   3 Input      1 Bit        Muxes := 32    
+Module SEXT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	  13 Input      1 Bit        Muxes := 2     
+Module Ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   6 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module DIGIT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   4 Input     32 Bit        Muxes := 3     
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+Module IF_REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module ID_REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+Module EX_REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module MEM_REG 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+Module Data_Hazard_Detection 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module Control_Hazard_Detection 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 9     
+	   4 Input      2 Bit        Muxes := 18    
+	   9 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 1     
+Module myCPU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     32 Bit        Muxes := 1     
+Module Bridge 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module DLED_Interface 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module LED_Interface 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Button_Interface 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Switches_Interface 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "j_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "b_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "alu_asel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Bridge/access_btn" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Bridge/access_sw" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Bridge/access_led" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Bridge/access_dig" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[16]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[17]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[18]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[19]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[20]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[21]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[22]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[8]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[24]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[9]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[25]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[10]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[26]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[11]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[27]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[12]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[28]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[5]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[13]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[29]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[6]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[14]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[30]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[23]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[7]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U_Button_Interface/rdata_reg[15]' (FDC) to 'U_Button_Interface/rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_Button_Interface/rdata_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (dou_reg[7]) is unused and will be removed from module DIGIT.
+WARNING: [Synth 8-3332] Sequential element (dou_reg[6]) is unused and will be removed from module DIGIT.
+WARNING: [Synth 8-3332] Sequential element (dou_reg[5]) is unused and will be removed from module DIGIT.
+WARNING: [Synth 8-3332] Sequential element (dou_reg[4]) is unused and will be removed from module DIGIT.
+WARNING: [Synth 8-3332] Sequential element (dou_reg[3]) is unused and will be removed from module DIGIT.
+WARNING: [Synth 8-3332] Sequential element (dou_reg[2]) is unused and will be removed from module DIGIT.
+WARNING: [Synth 8-3332] Sequential element (dou_reg[1]) is unused and will be removed from module DIGIT.
+WARNING: [Synth 8-3332] Sequential element (dou_reg[0]) is unused and will be removed from module DIGIT.
+INFO: [Synth 8-3886] merging instance 'Core_cpu/U_IF_REG/id_pc4_reg[0]' (FDCE) to 'Core_cpu/U_IF_REG/id_pc_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Core_cpu/U_ID_REG/ex_pc_reg[0]' (FDCE) to 'Core_cpu/U_ID_REG/ex_pc4_reg[0]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 899.434 ; gain = 532.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Clkgen/clk_out1' to pin 'Clkgen/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'fpga_clk'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 899.434 ; gain = 532.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 911.367 ; gain = 544.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module Clkgen has unconnected pin reset
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |DRAM          |         1|
+|3     |IROM          |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |DRAM   |     1|
+|2     |IROM   |     1|
+|3     |cpuclk |     1|
+|4     |BUFG   |     2|
+|5     |CARRY4 |    49|
+|6     |LUT1   |     1|
+|7     |LUT2   |   218|
+|8     |LUT3   |    91|
+|9     |LUT4   |   135|
+|10    |LUT5   |   239|
+|11    |LUT6   |  1584|
+|12    |MUXF7  |   392|
+|13    |MUXF8  |   128|
+|14    |FDCE   |  1638|
+|15    |FDPE   |     7|
+|16    |LD     |    33|
+|17    |LDP    |    24|
+|18    |IBUF   |    30|
+|19    |OBUF   |    40|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------+-------------------------+------+
+|      |Instance                       |Module                   |Cells |
++------+-------------------------------+-------------------------+------+
+|1     |top                            |                         |  4677|
+|2     |  Core_cpu                     |myCPU                    |  4326|
+|3     |    U_ALU                      |ALU                      |    33|
+|4     |    U_DIGIT                    |DIGIT                    |    24|
+|5     |    U_Control_Hazard_Detection |Control_Hazard_Detection |     1|
+|6     |    U_EX_REG                   |EX_REG                   |   354|
+|7     |    U_ID_REG                   |ID_REG                   |  1001|
+|8     |    U_IF_REG                   |IF_REG                   |   271|
+|9     |    U_MEM_REG                  |MEM_REG                  |   145|
+|10    |    U_NPC                      |NPC                      |    41|
+|11    |    U_RF                       |RF                       |  2392|
+|12    |    U_SEXT                     |SEXT                     |    32|
+|13    |  U_Button_Interface           |Button_Interface         |     5|
+|14    |  U_DLED_Interface             |DLED_Interface           |   183|
+|15    |  U_LED_Interface              |LED_Interface            |    24|
++------+-------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 50 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 957.148 ; gain = 220.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 957.148 ; gain = 589.797
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 626 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 957.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 57 instances were transformed.
+  LD => LDCE: 33 instances
+  LDP => LDPE: 24 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+193 Infos, 119 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 957.148 ; gain = 601.324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 957.148 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/220110630/proj_pipeline/proj_pipeline.runs/synth_1/miniRV_SoC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file miniRV_SoC_utilization_synth.rpt -pb miniRV_SoC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 30 13:31:51 2024...

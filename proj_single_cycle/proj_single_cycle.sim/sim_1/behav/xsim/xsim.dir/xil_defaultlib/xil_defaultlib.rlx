@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/220110630/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/220110630/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sim_1/new/cpuclk_sim.v,1721113114,verilog,,,,cpuclk_sim,,,../../../../proj_single_cycle.srcs/sources_1/ip/cpuclk;../../../../proj_single_cycle.srcs/sources_1/new,,,,,
+D:/220110630/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.v,1721112906,verilog,,D:/220110630/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sim_1/new/cpuclk_sim.v,,cpuclk,,,../../../../proj_single_cycle.srcs/sources_1/ip/cpuclk;../../../../proj_single_cycle.srcs/sources_1/new,,,,,
+D:/220110630/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,1721112906,verilog,,D:/220110630/comp2012/proj_miniRV/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.v,,cpuclk_clk_wiz,,,../../../../proj_single_cycle.srcs/sources_1/ip/cpuclk;../../../../proj_single_cycle.srcs/sources_1/new,,,,,

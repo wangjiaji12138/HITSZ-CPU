@@ -1,0 +1,1069 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 24 11:51:13 2024
+# Process ID: 8944
+# Current directory: D:/220110630/proj_single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3804 D:\220110630\proj_single_cycle\proj_single_cycle.xpr
+# Log file: D:/220110630/proj_single_cycle/vivado.log
+# Journal file: D:/220110630/proj_single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/220110630/proj_single_cycle/proj_single_cycle.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DIGIT_DINSEL.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tfgg484-1
+Top: miniRV_SoC
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1000.059 ; gain = 19.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'miniRV_SoC' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:5]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:7]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:11]
+INFO: [Synth 8-6157] synthesizing module 'cpuclk' [D:/220110630/proj_single_cycle/.Xil/Vivado-8944-PA21/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (1#1) [D:/220110630/proj_single_cycle/.Xil/Vivado-8944-PA21/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myCPU' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/myCPU.v:5]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/PC.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (2#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/PC.v:24]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-226] default block is never used [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/NPC.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (3#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (4#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RF_WDSEL' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF_WDSEL.v:24]
+INFO: [Synth 8-226] default block is never used [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF_WDSEL.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'RF_WDSEL' (5#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/RF_WDSEL.v:24]
+INFO: [Synth 8-6157] synthesizing module 'SEXT' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/SEXT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SEXT' (6#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/SEXT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (7#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Ctrl' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Ctrl.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Ctrl' (8#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Ctrl.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DIGIT' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DIGIT.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'DIGIT' (9#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DIGIT.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'myCPU' (10#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/myCPU.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Bridge' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Bridge.v:4]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Bridge.v:22]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Bridge.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Bridge' (11#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Bridge.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [D:/220110630/proj_single_cycle/.Xil/Vivado-8944-PA21/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (12#1) [D:/220110630/proj_single_cycle/.Xil/Vivado-8944-PA21/realtime/DRAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'IROM' [D:/220110630/proj_single_cycle/.Xil/Vivado-8944-PA21/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'IROM' (13#1) [D:/220110630/proj_single_cycle/.Xil/Vivado-8944-PA21/realtime/IROM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'DLED_Interface' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:23]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:41]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:81]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:82]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:83]
+INFO: [Synth 8-6157] synthesizing module 'Dig' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Dig.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Dig' (14#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Dig.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig0'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:65]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig1'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:64]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig2'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:63]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig3'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:62]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig4'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:61]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig5'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:60]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig6'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:59]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_Dig7'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'DLED_Interface' (15#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DLED_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_Interface' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/LED_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Interface' (16#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/LED_Interface.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'wdata' does not match port width (24) of module 'LED_Interface' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:204]
+WARNING: [Synth 8-689] width (24) of port connection 'led' does not match port width (32) of module 'LED_Interface' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:205]
+INFO: [Synth 8-6157] synthesizing module 'Button_Interface' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Button_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Button_Interface' (17#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Button_Interface.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Switches_Interface' [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Switches_Interface.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Switches_Interface' (18#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/Switches_Interface.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'Clkgen'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:94]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U_DLED_Interface'. This will prevent further optimization [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:183]
+INFO: [Synth 8-6155] done synthesizing module 'miniRV_SoC' (19#1) [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/miniRV_SoC.v:5]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[31]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[30]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[29]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[28]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[27]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[26]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[25]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[24]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[23]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[22]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[21]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[20]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[19]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[18]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[17]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[16]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[15]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[14]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[13]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[12]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[11]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[10]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[9]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[8]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[7]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[6]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[5]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[4]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[3]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[2]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[1]
+WARNING: [Synth 8-3331] design Switches_Interface has unconnected port addr[0]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[31]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[30]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[29]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[28]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[27]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[26]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[25]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[24]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[23]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[22]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[21]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[20]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[19]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[18]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[17]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[16]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[15]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[14]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[13]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[12]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[11]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[10]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[9]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[8]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[7]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[6]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[5]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[4]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[3]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[2]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[1]
+WARNING: [Synth 8-3331] design Button_Interface has unconnected port addr[0]
+WARNING: [Synth 8-3331] design Dig has unconnected port rst
+WARNING: [Synth 8-3331] design Dig has unconnected port clk
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[31]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[30]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[29]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[28]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[27]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[26]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[25]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[24]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[23]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[22]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[21]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[20]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[19]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[18]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[17]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[16]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[15]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[14]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[13]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[12]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[11]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[10]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[9]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[8]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[7]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[6]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[5]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[4]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[3]
+WARNING: [Synth 8-3331] design DIGIT has unconnected port dig[2]
+WARNING: [Synth 8-3331] design Ctrl has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design Ctrl has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design Ctrl has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design Ctrl has unconnected port funct7[2]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1000.059 ; gain = 19.625
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1000.059 ; gain = 19.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1000.059 ; gain = 19.625
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.dcp' for cell 'Clkgen'
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.dcp' for cell 'Mem_DRAM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.dcp' for cell 'Mem_IROM'
+INFO: [Netlist 29-17] Analyzing 2924 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'Clkgen/inst'
+Finished Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'Clkgen/inst'
+Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'Clkgen/inst'
+Finished Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'Clkgen/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/miniRV_SoC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/miniRV_SoC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1392.707 ; gain = 0.066
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+WARNING: [Constraints 18-619] A clock with name 'fpga_clk' already exists, overwriting the previous clock with the same name. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc:2]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/miniRV_SoC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/miniRV_SoC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1392.969 ; gain = 0.066
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1393.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2048 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1518.914 ; gain = 538.480
+72 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 1518.914 ; gain = 538.480
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'u_ila_0' at location 'uuid_23E7D65A79BC59F7BC47406C1714DFAE' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/miniRV_SoC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a100t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:52:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:52:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:52:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:52:42
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes U_DLED_Interface/count_end -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:52:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:52:57
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:53:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:53:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:53:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:53:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:53:24
+set_property TRIGGER_COMPARE_VALUE eq8'hXX [get_hw_probes dig_en_OBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:53:50
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:04
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:07
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes U_DLED_Interface/count_end -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:16
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:19
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:22
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {U_DLED_Interface/counting} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:40
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:43
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:54:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:54:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:55:00
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:55:04
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:55:10
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:21
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:55:21
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:55:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:55:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+set_property CONTROL.TRIGGER_POSITION 500 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:56:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:56:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes U_DLED_Interface/count_end -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:57:04
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:57:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:57:28
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes U_DLED_Interface/count_end -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq25'h000_0009 [get_hw_probes U_DLED_Interface/count -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:57:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:58:03
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Jul-24 11:58:12
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:58:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:58:16
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:58:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:58:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:58:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:58:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq25'b0_0000_0000_0000_0000_0000_1001 [get_hw_probes U_DLED_Interface/count -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq25'h000_0009 [get_hw_probes U_DLED_Interface/count -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:58:56
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:59:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:59:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:59:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:59:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:59:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:59:28
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:59:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:59:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 11:59:31
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 11:59:31
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 2 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:01:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+set_property CONTROL.TRIGGER_POSITION 600 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:01:28
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Jul-24 12:02:24
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:02:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:02:29
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:02:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:02:30
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:02:40
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:02:51
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+INFO: [Labtools 27-1965] The ILA core 'hw_ila_1' trigger was stopped by user at 2024-Jul-24 12:02:52
+WARNING: [Labtools 27-157] hw_ila [hw_ila_1] stopped. No data to upload.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:02:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:02:52
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:02:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:00
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:05
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:09
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:12
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:16
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:16
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:19
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+set_property TRIGGER_COMPARE_VALUE gt25'h000_0009 [get_hw_probes U_DLED_Interface/count -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:26
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:26
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+set_property TRIGGER_COMPARE_VALUE gt25'h000_0001 [get_hw_probes U_DLED_Interface/count -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+ERROR: [Labtools 27-3258] Due to ILA core feature implementation, probes which do not match the complete ILA core probe port from MSB to LSB may only use operator 'eq' or 'neq'.
+hw_ila 'hw_ila_1' hw_probe 'U_DLED_Interface/count[24:0]' with MAP property 'probe1[24:0]' uses operator 'gt' in compare value 'gt25'h000_0001'.
+ERROR: [Labtools 27-1385] Aborting Tcl command, due to incorrect hw_probe compare value operator usage.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:03:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:03:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:04:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:04:03
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:04:08
+ERROR: [Xicom 50-38] xicom: No trigger mark in any sample in window: 0.
+ERROR: [Xicom 50-41] Waveform data read from ILA core is corrupted (user chain=1, slave index=0).
+Resolution:
+1) Ensure that the clock signal connected to the debug core and/or debug hub is clean and free-running.
+2) Ensure that the clock connected to the debug core and/or debug hub meets all timing constraints.
+3) Ensure that the clock connected to debug core and/or debug hub is faster than the JTAG clock frequency.
+ERROR: [Xicom 50-38] xicom: Error during interpreting trace readback data
+ERROR: [Labtools 27-3176] hw_server failed during internal command.
+Resolution: Check that the hw_server is running and the hardware connectivity to the target
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:11
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Jul-24 12:04:11
+INFO: [Labtools 27-3304] ILA Waveform data saved to file D:/220110630/proj_single_cycle/proj_single_cycle.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:13
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Jul-24 12:04:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+ERROR: [Labtools 27-3312] Data read from hw_ila [hw_ila_1] is corrupted. Unable to upload waveform.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Wed Jul 24 12:05:48 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+[Wed Jul 24 12:06:41 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -jobs 16
+[Wed Jul 24 12:08:34 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.dcp' for cell 'Clkgen'
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.dcp' for cell 'Mem_DRAM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.dcp' for cell 'Mem_IROM'
+INFO: [Netlist 29-17] Analyzing 3006 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'Clkgen/inst'
+Finished Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'Clkgen/inst'
+Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'Clkgen/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3273.566 ; gain = 449.645
+Finished Parsing XDC File [d:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'Clkgen/inst'
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+WARNING: [Constraints 18-619] A clock with name 'fpga_clk' already exists, overwriting the previous clock with the same name. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc:2]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[0]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[1]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[2]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[3]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[4]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[5]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[6]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'dig_en_OBUF[7]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[0]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[1]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[2]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[3]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[4]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[5]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[6]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[7]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[8]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[9]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[10]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[11]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[12]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[13]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[14]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[15]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[16]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[17]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[18]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[19]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[20]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[21]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[22]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[23]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[24]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:96]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[4]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[5]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[6]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[7]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[8]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[9]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[10]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[11]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[12]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[13]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[14]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[15]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[16]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[17]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[18]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[19]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[20]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[21]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[22]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[23]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[24]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[25]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[26]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[27]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[28]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[29]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[30]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/wd_r[31]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:100]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count_end'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:104]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:104]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/counting'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:108]
+CRITICAL WARNING: [Common 17-162] Invalid option value specified for '-nets'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:108]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 3274.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2060 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 3274.277 ; gain = 520.688
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 24 12:09:22 2024...

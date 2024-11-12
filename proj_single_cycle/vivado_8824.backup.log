@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 25 09:00:47 2024
+# Process ID: 8824
+# Current directory: D:/220110630/proj_single_cycle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2732 D:\220110630\proj_single_cycle\proj_single_cycle.xpr
+# Log file: D:/220110630/proj_single_cycle/vivado.log
+# Journal file: D:/220110630/proj_single_cycle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/220110630/proj_single_cycle/proj_single_cycle.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/new/DIGIT_DINSEL.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 844.641 ; gain = 201.578
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 09:05:59 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 09:05:59 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tfgg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/DRAM/DRAM.dcp' for cell 'Mem_DRAM'
+INFO: [Project 1-454] Reading design checkpoint 'd:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.dcp' for cell 'Mem_IROM'
+INFO: [Netlist 29-17] Analyzing 3003 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_clock.xdc]
+Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:79]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[0]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[1]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[2]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[3]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[4]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[5]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[6]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[7]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[8]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[9]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[10]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[11]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[12]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[13]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[14]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[15]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[16]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[17]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[18]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[19]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[20]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[21]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[22]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[23]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+WARNING: [Vivado 12-507] No nets matched 'U_DLED_Interface/count[24]'. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:80]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:81]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc:82]
+Finished Parsing XDC File [D:/220110630/proj_single_cycle/proj_single_cycle.srcs/constrs_1/new/miniRV_SoC.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1764.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2060 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1764.773 ; gain = 9.793
+reset_run synth_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 09:09:52 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+[Thu Jul 25 09:09:52 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 09:12:01 2024] Launched synth_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 16
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'D:/220110630/proj_single_cycle/proj_single_cycle.srcs/sources_1/ip/IROM/IROM.xci' is already up-to-date
+[Thu Jul 25 09:12:56 2024] Launched impl_1...
+Run output will be captured here: D:/220110630/proj_single_cycle/proj_single_cycle.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 25 09:13:47 2024...
